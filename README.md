@@ -1,2 +1,2 @@
-# your_famous_lookalike
+# Your Famous Lookalike
 Interested in finding a celebrity with similar facial features to you??? This simple web app helps you find your famous lookalike.
