@@ -37,8 +37,10 @@ def upload_image():
             obj = Prediction(file)
             prediction = obj.make_pred()
 
-            image = os.path.join(app.config['UPLOAD_FOLDER'], prediction)
-            return render_template('index.html', filename=filename, prediction=image)
+            image = os.path.join(app.config['UPLOAD_FOLDER'], prediction[0])
+            similarity = prediction[1]
+            celebrity_name = prediction[2]
+            return render_template('index.html', filename=filename, prediction=image, similarity=similarity, celebrity_name=celebrity_name)
 
     return render_template('index.html')
 

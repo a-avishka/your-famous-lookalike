@@ -32,7 +32,8 @@
     <div>
         <h4>Successfully uploaded file.</h4>
         <br>
-        <h4>This was the celebrity with facial features closest to you. With a similarity percentage of </h4>
+        <h4>{{ celebrity_name }} was the celebrity with facial features closest to you.</h4>
+        <h4> Similarity percentage = {{ similarity }}%</h4>
         <img src="{{ prediction }}" alt="closest_celeb" width="500">
 
 
